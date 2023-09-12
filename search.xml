@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>比特币点对点电子现金票据</title>
+      <link href="2020/12/18/translate/Bitcoin-P2P-e-cash-paper-cn/"/>
+      <url>2020/12/18/translate/Bitcoin-P2P-e-cash-paper-cn/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>原文由中本聪于2008年发布在加密邮件列表</p></blockquote><p>我一直在研究一种新的电子现金系统，它是完全点对点的，且不需要被信任的第三方机构。</p><p>描述该系统的论文可在以下网址获取：</p><p><a href="http://www.bitcoin.org/bitcoin.pdf">http://www.bitcoin.org/bitcoin.pdf</a></p><a id="more"></a><p>主要特性：<br>1.通过点对点网络防止双重支付；<br>2.不需要铸币厂或者其它被信任的机构；<br>3.参与者可以是匿名的；<br>4.新币由哈希现金风格的工作量证明机制产生；<br>5.用于产生新币的工作量证明机制也为该网络的运行提供动力来防止双重支付。</p><p>比特币：一种点对点的电子现金系统</p><p>概要：<br>一个纯粹的点对点版本的电子现金系统，将允许在线支付直接从一方发送到另一方，而无需通过金融机构来负担。<br>数字签名提供了部分解决方案，但如果仍然需要被信任的第三方来防止双重支付，那么电子支付的主要优势就丧失了。<br>我们提出一个方案，使用点对点网络去解决双重支付问题。<br>此网络通过随机散列为所有交易加上一个时间戳，将它们写入一个不断延展的、基于随机散列的工作量证明链上，形成一个如非完全重做否则就不可能改变的记录。<br>最长链不仅用来证明已被见证的事件及其顺序，还用来证明它来自于最大的 CPU 算力池。<br>只要绝大多数 CPU 算力被良性节点控制，那么良性节点将会生成最长链，并且在速度上超过攻击者。<br>这个网络本身需要最小化的结构。<br>信息将以最大努力被传播，节点来去自由，但加入之时总是需要接受最长的工作证明链作为它们未参与期间所发生之一切的证明。</p><p>论文全文发布在以下网址：</p><p><a href="http://www.bitcoin.org/bitcoin.pdf">http://www.bitcoin.org/bitcoin.pdf</a></p><p>中本聪</p><p><a href="https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html">原文阅读</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 翻译 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bitcoin </tag>
+            
+            <tag> Blockchain </tag>
+            
+            <tag> 比特币 </tag>
+            
+            <tag> 区块链 </tag>
+            
+            <tag> 中本聪 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bitcoin P2P e-cash paper</title>
+      <link href="2020/12/18/reproduce/Bitcoin-P2P-e-cash-paper-en/"/>
+      <url>2020/12/18/reproduce/Bitcoin-P2P-e-cash-paper-en/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>The original article was published on Cryptography Mailing List written by Satoshi Nakamoto in 2008.</p></blockquote><p>I’ve been working on a new electronic cash system that’s fully peer-to-peer, with no trusted third party.</p><p>The paper is available at:<br><a href="http://www.bitcoin.org/bitcoin.pdf">http://www.bitcoin.org/bitcoin.pdf</a></p><a id="more"></a><p>The main properties:<br>Double-spending is prevented with a peer-to-peer network.<br>No mint or other trusted parties.<br>Participants can be anonymous.<br>New coins are made from Hashcash style proof-of-work.<br>The proof-of-work for new coin generation also powers the network to prevent double-spending.</p><p>Bitcoin: A Peer-to-Peer Electronic Cash System </p><p>Abstract.  </p><p>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without the burdens of going through a financial institution.<br>Digital signatures provide part of the solution, but the main benefits are lost if a trusted party is still required to prevent double-spending.<br>We propose a solution to the double-spending problem using a peer-to-peer network.<br>The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.<br>The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power.<br>As long as honest nodes control the most CPU power on the network, they can generate the longest chain and outpace any attackers.<br>The network itself requires minimal structure.<br>Messages are broadcasted on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.</p><p>Full paper at:<br><a href="http://www.bitcoin.org/bitcoin.pdf">http://www.bitcoin.org/bitcoin.pdf</a></p><p>Satoshi Nakamoto</p><p><a href="https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html">阅读原文</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 转载 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bitcoin </tag>
+            
+            <tag> Blockchain </tag>
+            
+            <tag> 比特币 </tag>
+            
+            <tag> 区块链 </tag>
+            
+            <tag> 中本聪 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
