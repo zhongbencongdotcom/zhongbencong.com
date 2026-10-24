@@ -1338,8 +1338,6 @@ ul.h-list > li {
 .l_main #comments {
   position: relative;
 }
-@media (max-width: 580px) {
-}
 .l_main #comments #valine_container p {
   line-height: 1.7;
 }

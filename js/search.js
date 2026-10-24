@@ -127,8 +127,8 @@ var SearchService = "";
     self.buildResult = function(url, title, digest) {
       var html = "";
       html = "<li>";
-      html +=   "<a class='result' href='" +url+ "'>";
-      html +=     "<span class='title'>" +title+ "</span>";
+      html +=   "<a class='result' href='" +escapeHtml(url)+ "'>";
+      html +=     "<span class='title'>" +escapeHtml(title)+ "</span>";
       html +=     "<span class='digest'>" +digest+ "</span>";
       html +=     "<span class='fas fa-chevron-thin-right'></span>";
       html +=   "</a>";
@@ -234,6 +234,19 @@ var SearchService = "";
 
 var HexoSearch;
 
+/* 安全工具函数：转义正则元字符（防 ReDoS/注入）与 HTML（防 XSS） */
+function escapeRegExp(str) {
+  return String(str).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 (function($) {
   'use strict';
 
@@ -284,16 +297,16 @@ var HexoSearch;
             if (first_occur >= 0) {
               start = Math.max(first_occur-30, 0);
               end = (start === 0) ? Math.min(200, post_content.length) : Math.min(first_occur+170, post_content.length);
-              var match_content = post_content.substring(start, end);
+              var match_content = escapeHtml(post_content.substring(start, end));
               keywords.forEach(function(keyword) {
-                var regS = new RegExp(keyword, "gi");
-                match_content = match_content.replace(regS, "<b>"+keyword+"</b>");
+                var regS = new RegExp(escapeRegExp(keyword), "gi");
+                match_content = match_content.replace(regS, "<b>"+escapeHtml(keyword)+"</b>");
               });
               post.digest = match_content;
             }
             else {
               end = Math.min(200, post_content.length);
-              post.digest = post_content.trim().substring(0, end);
+              post.digest = escapeHtml(post_content.trim().substring(0, end));
             }
           }
         });
